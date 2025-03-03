@@ -3,18 +3,16 @@
         <thead class="table-active">
             <tr>
                 <th>Id</th>
-                <th>Nombre</th>
-                <th>Precio</th>
-                <th>Existencias</th>
+                <th>Cliente</th>
+                <th>Numero</th>
             </tr>
         </thead>
         <tbody>
             {% for producto in productos %}
             <tr>
-                <td>{{ producto.Id_Producto }}</td>
-                <td>{{ producto.Nombre_Producto }}</td>
-                <td>{{ producto.Precio }}</td>
-                <td>{{ producto.Existencias }}</td>
+                <td>{{ producto.idCliente }}</td>
+                <td>{{ producto.nombreCliente }}</td>
+                <td>{{ producto.numero }}</td>
             </tr>
             {% endfor %}
         </tbody>
